@@ -1,0 +1,17 @@
+.wrapper {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #777777;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: fixed;
+    right: 7.5%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 0.85;
+}

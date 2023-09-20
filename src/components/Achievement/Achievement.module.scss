@@ -1,0 +1,60 @@
+.achievement-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 312px;
+    background-color: var(--color-primary);
+    justify-content: flex-start;
+
+    .achievement {
+        width: 540px;
+        background-image: url("/images/main_photo.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-family: var(--font-secondary);
+            line-height: 22px;
+            font-weight: 400;
+            color: var(--color-white);
+
+            span {
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .graph {
+        max-width: 589px;
+        width: 100%;
+        margin-left: 53px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievement-wrapper {
+        flex-wrap: wrap;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+
+        .achievement {
+            height: 312px;
+
+        }
+
+        .graph {
+            padding: 16px 0;
+            margin-left: 0;
+
+        }
+    }
+}

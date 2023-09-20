@@ -1,0 +1,107 @@
+.menu {
+    background-color: var(--color-primary);
+    height: 64px;
+
+    .wrapper {
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            padding: 0;
+
+            li {
+                color: #fff;
+                list-style: none;
+                width: 160px;
+                display: flex;
+                align-items: center;
+                font-family: var(--font-primary);
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 23px;
+                cursor: pointer;
+                position: relative;
+
+                .open {
+                    display: inline;
+                }
+
+                .close {
+                    display: none;
+                }
+
+
+                &:hover {
+
+                    .submenu {
+                        li {
+                            display: flex;
+                        }
+                    }
+
+                    .open {
+                        display: none;
+                    }
+
+                    .close {
+                        display: inline;
+                    }
+                }
+
+                .submenu {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    top: 38px;
+                    right: 0;
+                    background-color: #777777;
+
+                    li {
+                        max-width: 280px !important;
+                        width: 280px !important;
+                        height: 72px;
+                        font-family: var(--font-primary);
+                        font-weight: 300;
+                        font-size: 18px;
+                        background-color: #777777;
+                        padding-left: 32px;
+                        display: none;
+                        border-bottom: 1px solid #2e2e2e4c;
+                        border-top: 1px solid #ffffff40;
+                    }
+
+                    &:hover {
+                        li {
+                            display: flex;
+                        }
+                    }
+
+                }
+
+            }
+
+            li:last-child {
+                width: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        .wrapper {
+            ul {
+                li {
+                    display: none;
+                }
+
+                li:last-child {
+                    display: unset;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.meal-history-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 960px;
+    min-height: 476px;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 8px;
+
+    .history-item {
+        width: 234px;
+        height: 234px;
+        // background-image: url(/images/m01.png);
+        position: relative;
+        cursor: pointer;
+
+        &__tag {
+            background-color: #FFCC21;
+            position: absolute;
+            bottom: 0;
+
+            span {
+                padding: 7px 22px 7px 8px;
+                color: var(--color-white);
+                font-family: var(--font-primary);
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .meal-history-wrapper {
+        justify-content: center;
+    }
+}
